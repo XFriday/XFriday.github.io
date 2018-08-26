@@ -1,0 +1,98 @@
+/*样式文件的编码格式*/
+@charset "UTF-8";
+html,body{
+			height: 100%;
+			color: #0dd;
+			font-family: sans-serif;
+		}
+		body{
+			background: url(../images/bg.jpg) center center;/*指定背景图，并左右居中*/
+			background-size: cover;/*可以使背景图片根据浏览器大小缩放*/
+			margin: 0;/*初始化外边距*/
+			padding: 0;/*初始化内间隔*/
+			position: relative;/*body设置成relative才可将container设置成垂直居中*/
+		}
+		#container{
+			width: 70%;/*横向撑满整个浏览器大小*/
+			height: 60%;
+			margin-left: 15%;
+			background:rgb(171,171,171,0.3);
+
+			text-align: center;/*文字水平居中*/
+			position: absolute;/*父级元素设置相对定位后才可设置成绝对定位 */
+			top: 50%;/*使元素垂直居中*/
+			transform: translateY(-50%);/*沿Y轴上移一半长度*/
+			/*opacity: 0.5;*//*透明度设置*/
+			
+			
+		}
+
+	/*a{*/
+			/*font-size: 55px;*/
+			/*color: #fff;*/
+			/*background: #3ff;*/
+			/*border: 1px solid #33ffff;设置1px的实线边框*/
+			/*border-radius: 3px;3像素的边框圆角*/
+			/*padding: 10px 66px;设置内边距*/
+			/*text-decoration: none;去除下划线*/
+		/*}*/
+		
+		.nav-wrap{
+			height: auto;
+			border-bottom: 1px solid gray;
+			margin: 5px 3px;
+		}
+		.nav-tips{
+			float: left;
+			/*margin-top: 10px; */
+			/*margin-left: 20px;*/
+
+			
+		}
+
+		.nav-tips span{
+			height:44px;
+			line-height:44px;
+			margin-left: 20px;
+			margin-right: 20px;
+			
+
+		}
+
+		.nav-list{
+			float: left;
+			margin-left:10px;
+			color: #333;
+		}
+
+		.nav-list a{
+			display: block;
+			float: left;
+			color: black;
+			text-decoration: none;
+			height: 44px;
+			line-height: 44px;
+			width: 155px;
+			margin-right: 5px; 
+			text-align: left;
+
+		}
+
+		.nav-list a:hover{
+			background: gray;
+			opacity: 0.5;
+		}
+
+		.nav-list a img{
+			height: 16px;
+			width: 16px;
+			margin-right:5px;
+		}
+
+		.nav-list br{
+			break-after: right;
+		}
+
+		.null-div{
+			clear: both;
+		}
